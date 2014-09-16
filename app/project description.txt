@@ -1,0 +1,2 @@
+1) the aim of this application is to able users to create a grid based schedule to manage job information.
+2) Allow users to invite other users to view , edit and track job information.
