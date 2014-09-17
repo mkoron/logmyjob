@@ -13,7 +13,14 @@ class usersController extends \BaseController {
 	}
 	public function index()
 	{
-	   return View::make('users.index');
+	   $Is_logged_in=Auth::check();
+	   if($Is_logged_in !=true){
+          return View::make('users.index');   
+	   }
+	   else{
+	   	  return "logged in";
+	   }
+	   
 	}
 
 

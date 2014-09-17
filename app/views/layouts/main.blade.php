@@ -33,6 +33,13 @@
                 <li><a href="#">DOCS</a></li>
                 <li class="divider"></li>
                 <li><a href="#">FAQ'S</a></li>
+                <?php 
+                  $Is_logged_in=Auth::check();
+                   if($Is_logged_in){
+                       echo "<li><a href='#'>LOGOUT</a></li>"; 
+                   }
+                                  
+                ?>
               </ul>
             </li>
           </ul>
