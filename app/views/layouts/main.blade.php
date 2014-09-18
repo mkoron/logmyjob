@@ -36,14 +36,9 @@
                 <li><a href="#">SETTINGS</a></li>
                 <li class="divider"></li>
                 <li><a href="#">FAQ'S</a></li>
-                </li>
-                
-                   
-                    <li><a href="{{url('users/logout')}}">LOGOUT</a></li> 
+               <li><a href="{{url('users/logout')}}">LOGOUT</a></li> 
              <?php }?>
-                                  
-         
-                          
+                   
               </ul>
             
           </ul>

@@ -57,7 +57,7 @@ class usersController extends \BaseController {
 	   	   			$id=Auth::id();
 	   	   			Auth::loginUsingId($id);
 
-	   	   			return View::make('schedule.index'); 
+	   	   			return Redirect::route('users.index'); 
 	   	   		}
 	   	   		else
 	   	   		{
