@@ -21,6 +21,7 @@ Route::get('/', function()
 });
  Route::post('/users/processlogin','usersController@processlogin');
  Route::get('/users/list','usersController@list_users');
+ Route::get('/users/logout','usersController@logout');
  Route::resource('users','usersController');
 
 

@@ -18,7 +18,7 @@ class usersController extends \BaseController {
           return View::make('users.index');   
 	   }
 	   else{
-	   	  return "logged in";
+	   	  return "logged in"; 
 	   }
 	   
 	}
@@ -54,7 +54,10 @@ class usersController extends \BaseController {
 
 	   	   		);
 	   	   		if(Auth::attempt($userdata)){
-	   	   			echo "Success";
+	   	   			$id=Auth::id();
+	   	   			Auth::loginUsingId($id);
+
+	   	   			return "logged in"; 
 	   	   		}
 	   	   		else
 	   	   		{
@@ -145,7 +148,13 @@ class usersController extends \BaseController {
 	{
 		//
 	}
-
+    
+    public function logout()
+	{
+		//
+	  Auth::logout();
+	  return View::make('index');
+	}
 
 	/**
 	 * Remove the specified resource from storage.

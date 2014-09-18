@@ -27,21 +27,22 @@
             <li><a href="{{url('/')}}">HOME</a></li>
             <li><a href="#">FORUM</a></li>
             <li class="has-dropdown">
-              <a href="#">ABOUT</a>
+              <a href="#">ACCOUNT</a>
               <ul class="dropdown">
-                <li><a href="#">SUPPORT</a></li>
-                <li><a href="#">DOCS</a></li>
+                <li><a href="#">PROFILE</a></li>
+                <li><a href="#">SETTINGS</a></li>
                 <li class="divider"></li>
                 <li><a href="#">FAQ'S</a></li>
-                <?php 
-                  $Is_logged_in=Auth::check();
-                   if($Is_logged_in){
-                       echo "<li><a href='#'>LOGOUT</a></li>"; 
-                   }
+                </li>
+                <?php  $Is_logged_in=Auth::check();?>
+                   <?php if($Is_logged_in){?>
+                    <li><a href="{{url('users/logout')}}">LOGOUT</a></li> 
+                   <?php }?>
                                   
                 ?>
+                          
               </ul>
-            </li>
+            
           </ul>
         </section>
       </nav>
