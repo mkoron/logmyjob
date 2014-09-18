@@ -50,7 +50,7 @@
           <a href="#" class="close-reveal-modal">&#215</a>
           
           {{ Form::open(array('url'=>'/users/processlogin'))}}
-    <h1>Login</h1>
+    <h3>Login</h3>
 
     <!-- if there are login errors, show them here -->
     <p>

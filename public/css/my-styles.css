@@ -4,11 +4,11 @@
 
 /* general styling 
 ================================ */
-html,body{
+body{
   background: url('../img/old_map.png');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position:fixed;
+  background-size:cover;
+  background-position:contain;
 }
 img{
   max-width: 100%;
@@ -124,6 +124,27 @@ h1,h4,p{
 
 /* end of index page styling
 ================================ */
+
+
+/* schedule  styling 
+================================ */
+
+.shedule-styling{
+    margin-top:20px;
+    padding:5px;
+}
+.shedule-styling h1,h4{
+   font-weight:normal;
+    margin-bottom:20px;
+}
+.shedule-styling h1{
+
+     color:#808080;
+}
+.shedule-styling h4{
+    
+    color:black;
+}
 
 /* general styling
 ================================ */
