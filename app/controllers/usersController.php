@@ -18,7 +18,7 @@ class usersController extends \BaseController {
           return View::make('users.index');   
 	   }
 	   else{
-	   	  return "logged in"; 
+	   	  return View::make('schedule.index');
 	   }
 	   
 	}
@@ -57,7 +57,7 @@ class usersController extends \BaseController {
 	   	   			$id=Auth::id();
 	   	   			Auth::loginUsingId($id);
 
-	   	   			return "logged in"; 
+	   	   			return View::make('schedule.index'); 
 	   	   		}
 	   	   		else
 	   	   		{

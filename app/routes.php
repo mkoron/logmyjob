@@ -13,9 +13,16 @@
 Route::get('/', function()
 {
 
+    $Isloggedin=Auth::check();
+    if($Isloggedin!=true){
+         return  View::make('index');
+    }
+    else{
+         return  View::make('schedule.index');
+    }
 
  
-  return  View::make('index');
+ 
   
       
 });

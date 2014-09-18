@@ -20,7 +20,7 @@ class Createuserstable extends Migration {
 		      $table->string('email')->unique();
 		      $table->string('name');
 		      $table->string('surname');
-		      $table->string('profile-image');
+		      $table->string('profile-image')->default('null');
 		      $table->rememberToken();
 		   	  $table->timestamps();
 		
